@@ -20,6 +20,7 @@ export default function BarChart({ cost }) {
   useEffect(() => {
     chart();
   }, [cost]);
+
   return (
     <div>
       <Line

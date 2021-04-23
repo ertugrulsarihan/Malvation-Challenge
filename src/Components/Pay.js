@@ -13,7 +13,7 @@ export default function Pay({ cost, show }) {
   }, []);
   return (
     <div className="side">
-      <img src={Card} alt="card image" />
+      <img src={Card} alt="" />
 
       <table class="bordered pay-table">
         <thead>

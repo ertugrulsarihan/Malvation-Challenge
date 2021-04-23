@@ -1,7 +1,7 @@
 import React, { useState, useRef, useEffect } from "react";
 import uuid from "react-uuid";
 import { BsFillTrash2Fill } from "react-icons/bs";
-import BarChart from "./BarChart";
+
 import PieChart from "./PieChart";
 import Pay from "./Pay";
 
@@ -132,12 +132,6 @@ export default function Expense() {
       </div>
       <div className="col-12 col-md-4 right-bar">
         <Pay show={show} cost={cost} />
-      </div>
-
-      <div className="row">
-        <div className="container">
-          <BarChart cost={cost} />
-        </div>
       </div>
     </div>
   );

@@ -25,7 +25,7 @@ export default function PieChart({ cost, listNames, listPrices }) {
   };
   useEffect(() => {
     chart();
-  }, [cost, listNames, listPrices,chart]);
+  }, [cost, listNames, listPrices]);
 
   return (
     <div className="container">

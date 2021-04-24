@@ -79,7 +79,7 @@ body {
 }
 
 .title {
-  justify-content: start;
+  justify-content: flex-start;
   padding: 35px;
   position: relative;
   top: -100px;

@@ -18,15 +18,15 @@ export default function PieChart({ cost, listNames, listPrices }) {
             "rgb(255, 205, 86)",
           ],
           borderWidth: 4,
-          hoverOffset: 4
+          hoverOffset: 4,
         },
       ],
     });
   };
   useEffect(() => {
     chart();
-    
-  }, [cost, listNames, listPrices]);
+  }, [cost, listNames, listPrices,chart]);
+
   return (
     <div className="container">
       <div>

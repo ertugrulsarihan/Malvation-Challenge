@@ -6,12 +6,15 @@ import { AiFillDashboard } from "react-icons/ai";
 import { SiGoogleanalytics } from "react-icons/si";
 import { AiFillCalendar } from "react-icons/ai";
 import { BsListNested } from "react-icons/bs";
-
+import M from "materialize-css/dist/js/materialize.min.js";
 import $ from "jquery";
 
 class Navbar extends Component {
   componentDidMount() {
-   
+    document.addEventListener("DOMContentLoaded", function () {
+      var elems = document.querySelectorAll(".sidenav");
+      M.Sidenav.init(elems, {});
+    });
     //Profile image animation
     $(document).ready(function () {
       $(".myimage").mouseover(function () {
@@ -54,7 +57,7 @@ class Navbar extends Component {
         sec +
         " " +
         midday; /* adding time to the div */
-       setTimeout(currentTime, 1000); /* setting timer */
+      setTimeout(currentTime, 1000); /* setting timer */
     }
 
     function updateTime(k) {

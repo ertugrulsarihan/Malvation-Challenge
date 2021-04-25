@@ -135,7 +135,7 @@ export default function Expense() {
       </div>
 
       <div className="row">
-        <div className="container">
+        <div className=" container bar">
           <BarChart cost={cost} />
         </div>
       </div>

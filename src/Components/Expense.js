@@ -54,23 +54,29 @@ export default function Expense() {
   return (
     <div className="row">
       <div className=" col-12 col-md-8 row main ">
-        <form class="col-12 col-md-6">
-          <div class="row">
-            <div class="input-field col-12">
-              <i class="material-icons prefix">add</i>
-              <input id="icon_prefix" type="text" class="validate" ref={item} />
+        <form className="col-12 col-md-6">
+          <div className="row">
+            <div className="input-field col-12">
+              <i className="material-icons prefix">add</i>
+              <input
+                id="icon_prefix"
+                type="text"
+                className="validate"
+                ref={item}
+              />
               <label style={{ color: "black" }} for="icon_prefix">
                 Expense
               </label>
             </div>
-            <div class="input-field col-12">
-              <i class="material-icons prefix">attach_money</i>
+            <div className="input-field col-12">
+              <i className="material-icons prefix">attach_money</i>
               <input
                 id="icon_telephone"
                 type="tel"
-                class="validate"
+                className="validate"
                 ref={price}
               />
+
               <label style={{ color: "black" }} for="icon_telephone">
                 Price
               </label>
@@ -88,17 +94,17 @@ export default function Expense() {
         </div>
 
         <div className="row">
-          <div class="responsive-table table-status-sheet col-12">
-            <table class="bordered">
+          <div className="responsive-table table-status-sheet col-12">
+            <table className="bordered">
               <thead>
                 <tr>
-                  <th class="center">Expense</th>
-                  <th class="center">Price</th>
+                  <th className="center">Expense</th>
+                  <th className="center">Price</th>
                 </tr>
               </thead>
               <tbody>
                 {list.map((l) => (
-                  <div className="list container" key={l.id}>
+                  <div className="list " key={l.id}>
                     <p>
                       <b>{l.name}</b>
                     </p>

@@ -28,7 +28,7 @@ export default function PieChart({ cost, listNames, listPrices }) {
   }, [cost, listNames, listPrices]);
 
   return (
-    <div className="container pie">
+    <div className="pie">
       <div>
         <Doughnut
           data={chartdata}
